@@ -1,0 +1,22 @@
+@import "./styles/console.css";
+@import "./styles/about.css";
+@import "./styles/project-modes.css";
+
+:root {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 14px;
+  color: #243348;
+  background: #101f35;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select, textarea { font: inherit; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+a { color: inherit; }
+img { max-width: 100%; }
+:focus-visible { outline: 3px solid #be4a0c; outline-offset: 3px; }
+::selection { background: #ffcd83; color: #17243a; }

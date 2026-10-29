@@ -1,0 +1,13 @@
+.project-mode-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.project-mode-controls h2 { margin: 0; font: bold 17px "Courier New", monospace; }
+.project-mode-controls h2:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
+.project-explanation .reading-panel h3 { margin: 0 0 13px; font: bold 20px/1.25 Georgia, "Times New Roman", serif; }
+.project-technical-subtitle { margin: 0 0 20px; color: var(--muted); line-height: 1.6; }
+.technical-confirmation { width: min(440px, calc(100% - 32px)); max-height: calc(100dvh - 40px); padding: 3px; border: 3px solid; border-color: #fffef1 #7a8993 #7a8993 #fffef1; border-radius: 0; background: var(--paper); color: var(--ink); font: 14px/1.7 Tahoma, Verdana, Arial, sans-serif; }
+.technical-confirmation::backdrop { background: rgb(0 0 0 / 65%); }
+.technical-confirmation-title { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: var(--nav); color: #f6f0dc; }
+.technical-confirmation-title h2 { margin: 0; font: bold 17px "Courier New", monospace; }
+.technical-confirmation-body { padding: 19px; }
+.technical-confirmation-body p { margin: 0 0 23px; }
+.technical-confirmation-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+@media print { .project-mode-controls button { display: none; } }

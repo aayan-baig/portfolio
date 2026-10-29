@@ -1,0 +1,47 @@
+/* About-specific document details. All colors follow the existing console theme. */
+.about-page .about-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 165px;
+  align-items: start;
+  gap: 25px;
+}
+.about-page .about-intro-copy h2 { font-size: 28px; }
+.about-page .about-facts { margin: 20px 0 0; font-size: 12px; }
+.about-page .about-facts > div { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 6px 0; }
+.about-page .about-facts dt { min-width: 125px; color: var(--muted); }
+.about-page .about-facts dd { margin: 0; }
+.about-page .about-portrait { min-width: 0; margin: 0; padding: 5px; border: 2px inset var(--line); background: var(--screen); }
+.about-page .about-portrait > img { display: block; width: 100%; height: auto; }
+.about-page .about-portrait-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; min-height: 190px; padding: 20px 10px; background: var(--nav); color: #edf0e6; font: 11px/1.5 "Courier New", monospace; text-align: center; }
+.about-page figcaption { margin-top: 8px; color: var(--muted); font: 11px/1.5 "Courier New", monospace; }
+.about-page .about-capability, .about-page .about-interest { margin-top: 18px; padding-top: 18px; border-top: 1px dotted var(--line); }
+.about-page h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font: bold 17px/1.4 Georgia, "Times New Roman", serif; }
+.about-page h4 { margin: 14px 0 8px; font-size: 13px; }
+.about-page .about-capability > :last-child, .about-page .about-interest > :last-child { margin-bottom: 0; }
+.about-page .about-project-links { display: flex; flex-wrap: wrap; gap: 5px 14px; margin: 10px 0; font-size: 12px; }
+.about-page .about-project-links > span { color: var(--muted); }
+.about-page .about-note p { margin-bottom: 12px; }
+.about-page .about-note:last-child > :last-child { margin-bottom: 0; }
+.about-page .birthday-control { position: relative; display: inline-block; }
+.about-page .birthday-age { padding: 0 4px; border: 0; border-bottom: 1px dotted var(--accent); border-radius: 0; background: transparent; color: var(--accent); font: bold 13px/1.7 "Courier New", monospace; cursor: help; }
+.about-page .birthday-tip { position: absolute; z-index: 2; bottom: calc(100% + 7px); left: 0; width: max-content; max-width: min(235px, 65vw); padding: 8px 11px; border: 2px solid; border-color: #fffef1 var(--line) var(--line) #fffef1; background: var(--paper); color: var(--ink); font: 12px/1.5 Tahoma, Verdana, sans-serif; }
+.about-page .birthday-tip::after { content: ""; position: absolute; top: 100%; left: 0; width: 100%; height: 9px; }
+.about-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+@media (max-width: 950px) and (min-width: 761px), (max-width: 560px) {
+  .about-page .about-introduction { grid-template-columns: 1fr; gap: 20px; }
+  .about-page .about-portrait { width: min(190px, 100%); }
+}
+@media print {
+  .about-page .birthday-tip { display: none; }
+  .about-page .birthday-age { border: 0; color: inherit; }
+}
+/* No transitions or animations are used, including in reduced-motion mode. */
+
+/* Keep the approved longer copy readable without changing the document layout. */
+.about-page .about-intro-copy { min-width: 0; }
+.about-page .about-capability { min-width: 0; }
+.about-page .about-capability > p { max-width: 72ch; }
+.about-page .about-skill-inventory { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.about-page .about-skill-inventory strong { font-weight: normal; }
+.about-page .about-intro-copy .birthday-age { padding: 0 1px; font: inherit; font-weight: bold; }

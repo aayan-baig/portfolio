@@ -1,0 +1,17 @@
+wallpaper.jpg
+
+Photograph: Boathouse on a mountain lake, Lago di Braies
+Photographer: Luca Bravo
+Source: https://unsplash.com/photos/brown-house-near-body-of-water-zAjdgNXsMeg
+Image: https://images.unsplash.com/photo-1470770841072-f978cf4d019e
+License: Unsplash License, https://unsplash.com/license
+Downloaded: 2026-10-28
+
+The Unsplash License permits downloading, copying, modifying, distributing,
+and using this photograph, including for commercial purposes. Attribution
+is appreciated but not required. The license prohibits selling unmodified
+copies or compiling images to replicate a competing image service.
+
+Local version: 2400 x 1600 progressive JPEG, quality 88, optimized for desktop
+display. This is a real photograph. No generated artwork or overlays were added.
+The photograph's license is separate from the portfolio source code.
